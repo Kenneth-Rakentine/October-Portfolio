@@ -1,38 +1,56 @@
 .App {
-  text-align: center;
+  /* text-align: center; */
+  display: column;
+  background: #e7e3e463 url(https://grainy-gradients.vercel.app/noise.svg);
+  height:100vh;
 }
 
-.App-logo {
+.placeholderGif{
+  /* display:column;
+  align-self:center; */
+  margin-left:34%;
+  margin-top:10%;
   height: 40vmin;
   pointer-events: none;
+  animation: App-logo-spin infinite 1.2s linear;
+  box-shadow: 0px 8px 1px 12px black;
 }
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
 }
 
 @keyframes App-logo-spin {
-  from {
+ 0% {
     transform: rotate(0deg);
   }
-  to {
+  18%{
+    transform: translatex(38%)
+  }
+  14%{
+    transform: translatex(-30%)
+  }
+  12%{
+    transform: translatex(20%)
+  }
+  10%{
+    transform: translatex(0%)
+
+  }
+ 90%{
     transform: rotate(360deg);
   }
+}
+
+.logoImg{
+  height:10%;
+  width:20%;
+}
+
+
+.header{
+  /* border: solid rgb(126, 126, 138); */
+  background-color: #7c7b7c6c;
+  height: 5%;
 }
